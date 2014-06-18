@@ -10,7 +10,7 @@ soup.prettify()
 all_tables = soup.find_all('table')    #finding all the tables -- there are 2 in this case content table and league table
 
 
-op_file = open("fixtures.csv",'a')   	#opening a csv file to write
+op_file = open("fixtures.tsv",'a')   	#opening a tsv file to write
 
 op_file.write("BPL 2014-15 schedule Home vs Away format (time in GMT)")
 
