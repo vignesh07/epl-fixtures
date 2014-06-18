@@ -13,6 +13,7 @@ all_tables = soup.find_all('table')    #finding all the tables -- there are 2 in
 op_file = open("fixtures.tsv",'a')   	#opening a tsv file to write
 
 op_file.write("BPL 2014-15 schedule Home vs Away format (time in GMT)")
+op_file.write('\t')
 
 for table in all_tables:
 	 if(table['class'][0]=="contentTable"):   	#content table is the classname; other being league table
