@@ -29,10 +29,10 @@ for table in all_tables:
 	 			op_file.write(chunk.string)
 	 			op_file.write('\t')
 	 			
+	 			
 
 	 		if(chunk['class'][0]=="clubs"):	  #we need this class of data that has the names of the clubs
 	 			name=chunk.find('a')
-	 			print "match is between "+ str(name.string)
 	 			op_file.write(name.string)
 				op_file.write('\n')
 	 			
