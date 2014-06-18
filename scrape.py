@@ -20,6 +20,7 @@ for table in all_tables:
 	 	print header.text
 	 	op_file.write('\n')
 	 	op_file.write(header.text)		#header contains the day (sample: Saturday August 16 2014)
+	 	op_file.write('\t')
 	 	op_file.write('\n')
 
 	 	data = table.find_all('td')		#collects all data present in the table
